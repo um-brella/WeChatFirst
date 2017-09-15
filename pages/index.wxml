@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="page">
+<view class="weui-article">
+    <view class="weui-article__h1">文章列表</view>
+  </view>
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access">
+        <!-- <view class="weui-cells__title">文章列表</view> -->
+          <block wx:if="{{list[0].title}}">
+            <view class="weui-cells weui-cells_after-title">
+              <!-- <view> -->
+                <navigator wx:for="{{list}}" wx:key="id" url="components/show/show?id={{item.id}}" open-type='navigateTo' class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd">{{item.title}}</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access">详情</view>
+                </navigator>
+              <!-- </view> -->
+            </view>
+          </block>
+          <view wx:else class="page__desc container" >暂无文章</view> 
+        </view> 
+    </view>
+</view>

@@ -1,0 +1,26 @@
+<!--pages/components/show/show.wxml-->
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">文章详情</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-article">
+          <view class="weui-cell weui-cell_switch">
+            <view class="weui-article__h1 weui-cell__bd">{{title}}</view>
+            <view class="weui-cell__ft">
+              <text space="nbsp">收藏 </text>
+              <switch bindchange="collectList" checked="{{chooseState.state}}"/>
+            </view>
+          </view>
+          <view class="weui-article__section">
+            <view class="weui-article__section">
+              <view class="weui-article__p">
+                 {{content}}
+              </view>
+            </view>
+          </view>
+          <button class="weui-btn" type="primary" bindtap='putList'>修改</button>
+          <button class="weui-btn" type="warn" bindtap='delList'>删除</button>
+        </view>
+    </view>
+</view>

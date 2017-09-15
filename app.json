@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index",
+    "pages/components/add/add",
+    "pages/components/user/user",
+    "pages/components/show/show",
+    "pages/components/put/put"
+  ],
+  "window":{
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "日记本",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "backgroundColor": "#f8f8f8"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#00A600",
+    "backgroundColor":"#fff",
+    "list": [
+      {
+        "pagePath": "pages/index",
+        "iconPath":"tabIcon/list.png",
+        "selectedIconPath":"tabIcon/listSelected.png",
+        "text": "列表页"
+      },
+      {
+        "pagePath": "pages/components/add/add",
+        "iconPath": "tabIcon/add.png",
+        "selectedIconPath": "tabIcon/addSelected.png",
+        "text": "添加页"
+      },
+      {
+        "pagePath":"pages/components/user/user",
+        "iconPath": "tabIcon/user.png",
+        "selectedIconPath": "tabIcon/userSelected.png",
+        "text":"个人中心"
+      }
+    ],
+    "position":"bottom"
+  }
+}
